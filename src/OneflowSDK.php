@@ -192,7 +192,7 @@ class OneflowSDK {
 	 * @return mixed
 	 */
 	public function orderCancel($id){
-		if (strlen($id)>0)		return $this->put("/order/$id/cancel");
+		if (strlen($id)>0)		return $this->put("/order/$id/cancel", array();
 		else					return false;
 	}
 
